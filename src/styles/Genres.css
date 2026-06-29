@@ -1,0 +1,423 @@
+/* ==========================
+   PAGE
+========================== */
+
+.genre-page {
+  min-height: 100vh;
+  background: #0f172a;
+  color: #fff;
+  animation: fadePage .5s ease;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.genre-hero {
+  height: 420px;
+
+  background:
+    linear-gradient(rgba(15,23,42,.75), rgba(15,23,42,.95)),
+    linear-gradient(135deg,#2563eb,#1d4ed8,#0f172a);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.genre-overlay {
+  width: 90%;
+  max-width: 900px;
+}
+
+.genre-badge {
+
+  display: inline-block;
+
+  background: #2563eb;
+
+  padding: 10px 22px;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  margin-bottom: 25px;
+
+  font-weight: 600;
+
+}
+
+.genre-overlay h1 {
+
+  font-size: 55px;
+
+  margin-bottom: 18px;
+
+  font-weight: 700;
+
+}
+
+.genre-overlay p {
+
+  color: #cbd5e1;
+
+  line-height: 1.8;
+
+  font-size: 18px;
+
+}
+
+/* ==========================
+   GENRE SELECTOR
+========================== */
+
+.genre-selector {
+
+  width: 90%;
+
+  margin: 60px auto;
+
+}
+
+.genre-selector h2 {
+
+  font-size: 30px;
+
+  margin-bottom: 25px;
+
+}
+
+/* Scroll */
+
+.genre-scroll {
+
+  overflow-x: auto;
+
+  scrollbar-width: none;
+
+}
+
+.genre-scroll::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+.genre-buttons {
+
+  display: flex;
+
+  gap: 15px;
+
+  width: max-content;
+
+  padding-bottom: 12px;
+
+}
+
+/* Buttons */
+
+.genre-btn {
+
+  padding: 14px 24px;
+
+  border: none;
+
+  border-radius: 50px;
+
+  background: #1e293b;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: .35s;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  border: 2px solid transparent;
+
+}
+
+.genre-btn:hover {
+
+  background: #2563eb;
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 30px rgba(37,99,235,.35);
+
+}
+
+.genre-btn.active {
+
+  background: linear-gradient(135deg,#2563eb,#3b82f6);
+
+  border-color: #60a5fa;
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 35px rgba(37,99,235,.4);
+
+}
+
+/* ==========================
+   INFO CARDS
+========================== */
+
+.genre-info {
+
+  width: 90%;
+
+  margin: 40px auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+
+  gap: 25px;
+
+}
+
+.info-card {
+
+  background: rgba(30,41,59,.55);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  text-align: center;
+
+  transition: .35s;
+
+}
+
+.info-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: #2563eb;
+
+  box-shadow: 0 20px 40px rgba(37,99,235,.3);
+
+}
+
+.info-card h3 {
+
+  font-size: 36px;
+
+  margin-bottom: 10px;
+
+}
+
+.info-card span {
+
+  color: #cbd5e1;
+
+}
+
+/* ==========================
+   MOVIES
+========================== */
+
+.movies-section {
+
+  width: 90%;
+
+  margin: 70px auto;
+
+}
+
+.movies-section h2 {
+
+  font-size: 34px;
+
+  margin-bottom: 30px;
+
+}
+
+.movies-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+
+  gap: 30px;
+
+  animation: fadeUp .6s ease;
+
+}
+
+/* ==========================
+   LOADING
+========================== */
+
+.loading {
+
+  height: 250px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 24px;
+
+}
+
+/* ==========================
+   EMPTY
+========================== */
+
+.empty-state {
+
+  height: 350px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background: #1e293b;
+
+  border-radius: 20px;
+
+}
+
+.empty-state h2 {
+
+  margin-bottom: 10px;
+
+}
+
+.empty-state p {
+
+  color: #94a3b8;
+
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadePage {
+
+  from {
+
+    opacity: 0;
+
+  }
+
+  to {
+
+    opacity: 1;
+
+  }
+
+}
+
+@keyframes fadeUp {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.genre-overlay h1{
+
+font-size:42px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.genre-hero{
+
+height:300px;
+
+}
+
+.genre-overlay h1{
+
+font-size:32px;
+
+}
+
+.genre-overlay p{
+
+font-size:16px;
+
+}
+
+.genre-selector{
+
+margin-top:40px;
+
+}
+
+.movies-section h2{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.genre-btn{
+
+padding:12px 18px;
+
+font-size:14px;
+
+}
+
+.genre-overlay h1{
+
+font-size:28px;
+
+}
+
+.genre-info{
+
+grid-template-columns:1fr;
+
+}
+
+}

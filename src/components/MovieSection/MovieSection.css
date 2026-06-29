@@ -1,0 +1,43 @@
+.movie-section{
+    width:90%;
+    margin:60px auto;
+}
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.section-header h2{
+    color:white;
+    font-size:30px;
+    font-weight:700;
+    position:relative;
+    padding-left:15px;
+}
+
+.section-header h2::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:5px;
+    height:100%;
+    background:#2563eb;
+    border-radius:5px;
+}
+
+.movies-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:25px;
+    
+}.no-movies{
+    color:#94a3b8;
+    font-size:18px;
+    text-align:center;
+    grid-column:1/-1;
+    padding:40px;
+}

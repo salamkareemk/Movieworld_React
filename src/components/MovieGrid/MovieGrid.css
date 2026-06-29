@@ -1,0 +1,131 @@
+.movie-page{
+
+    min-height:100vh;
+
+    background:#0f172a;
+
+    padding-bottom:60px;
+
+}
+
+/* Banner */
+
+.page-banner{
+
+    height:260px;
+
+    background:linear-gradient(
+        135deg,
+        #1d4ed8,
+        #0f172a
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:50px;
+
+}
+
+.banner-overlay{
+
+    text-align:center;
+
+}
+
+.banner-overlay h1{
+
+    font-size:50px;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.banner-overlay p{
+
+    color:#cbd5e1;
+
+    font-size:18px;
+
+    margin-bottom:20px;
+
+}
+
+.banner-overlay span{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+/* Grid */
+
+.movie-grid-container{
+
+    width:90%;
+
+    margin:auto;
+
+}
+
+.movies-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+
+    gap:30px;
+
+}
+
+/* Empty */
+
+.empty-state{
+
+    height:300px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+}
+
+.empty-state p{
+
+    color:#94a3b8;
+
+}
+
+@media(max-width:768px){
+
+.banner-overlay h1{
+
+    font-size:34px;
+
+}
+
+.banner-overlay p{
+
+    font-size:16px;
+
+}
+
+}

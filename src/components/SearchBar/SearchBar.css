@@ -1,0 +1,18 @@
+.search-container{
+    width:350px;
+}
+
+.search-container input{
+    width:100%;
+    padding:14px 18px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    background:#1e293b;
+    color:white;
+    font-size:16px;
+}
+
+.search-container input::placeholder{
+    color:#94a3b8;
+}
